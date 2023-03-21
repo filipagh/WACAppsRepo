@@ -7,13 +7,13 @@ spec:
   navigation:
     - element: fa-ambulance-wl-app
       path: fa-ambulance-wl
-      title: Zoznam čakajúcich msevcik
+      title: Zoznam čakajúcich fa
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
       attributes:
         - name: api-uri
           value: /fa-ambulance-wl/
         - name: ambulance
-          value: bobulova
+          value: bobulova`
   preload: false
   proxy: true
   hash-suffix: v1alpha1
