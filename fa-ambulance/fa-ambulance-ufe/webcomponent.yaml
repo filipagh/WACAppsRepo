@@ -12,6 +12,8 @@ spec:
       attributes:
         - name: api-uri
           value: /fa-ambulance-wl/
+        - name: base-path
+          value: /ui/fa-ambulance-wl/
         - name: ambulance
           value: bobulova`
   preload: false
