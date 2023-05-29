@@ -5,7 +5,7 @@ metadata:
 spec:
   module-uri: http://fa-projekt.wac-hospital/build/fa-projekt.esm.js
   navigation:
-    - element: my-component
+    - element: fa-projekt
       path: fa-projekt
       title: fa-projekt
       details: nic zaujimave, zatial len nech daco je, este doplnim :)
