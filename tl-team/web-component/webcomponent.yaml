@@ -8,11 +8,13 @@ spec:
   navigation:
     - element: tl-equipment-app
       path: tl-equipment
-      title: Tl-team Správa vybavenia
-      details: Spravovanie vybavenia v ambulancii
+      title: Tl-team Evidovanie inventáru tl
+      details: Evidencia umiesnenia inventáru nemocníc
       attributes:
         - name: base-path
-          value: /ui/tl-team/
+          value: /ui/tl-equipment/
+        - name: api-uri
+          value: /tl-equipment-api
   preload: false
   proxy: true
-  hash-suffix: v1alpha1
+  hash-suffix: v1alpha2
