@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: fa-projekt-api
+spec:
+  type: ClusterIP
+  selector:
+    pod: fa-projekt-api-label
+  ports:
+  - name: webapi-s-port
+    protocol: TCP
+    port: 80
+    targetPort: 8080

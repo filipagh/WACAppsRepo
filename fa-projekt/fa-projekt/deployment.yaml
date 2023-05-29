@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: fa-projekt-container
-        image: pumec/fa-wac-fe:1.0.0-33
+        image: pumec/fa-wac-fe:1.0.0-54
         imagePullPolicy: Always
         ports:
         - name: http
