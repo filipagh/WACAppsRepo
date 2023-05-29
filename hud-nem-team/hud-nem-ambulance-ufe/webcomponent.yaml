@@ -12,6 +12,11 @@ spec:
       path: hud-nem-erl      # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Zoznam E-receptov (Hudanova, Nemcova)     # názov mikro aplikácie
       details: Spravuje zoznam E-receptov
+      attributes:                   # zoznam attribútov pre vkladaný element
+        - name: base-path
+          value: /hud-nem-erl/
+        - name: api-uri
+          value: /hud-nem-erl-api
   preload: false                    # určuje, či má byť web komponent načítaný spolu s hlavnou stránkou
   proxy: true                       # pre komponenty v rámci klastra, neprístupné na verejnej sieti 
                                     # musí byť táto hodnota nastavená na true 

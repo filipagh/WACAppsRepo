@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hud-nem-erl-ufe-container # meno kontaineru - v pod-e ich môže byť viac
-        image: xhudanova/hud-nem-erl-ufe
+        image: xhudanova/hud-nem-erl-ufe:1.0.0-61
         imagePullPolicy: Always
         ports:
         - name: http

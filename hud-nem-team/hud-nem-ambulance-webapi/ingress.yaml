@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hud-nem-erl-webapi
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /api/$2
+    nginx.ingress.kubernetes.io/use-regex: "true"
+spec:
+  ingressClassName: wac-hospital
+  rules:
+  - http:
+      paths:
+      - path: /hud-nem-erl-api(/|$)(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: hud-nem-erl-webapi
+            port:
+              name: webapi-s-port
