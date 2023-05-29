@@ -1,0 +1,28 @@
+ apiVersion: apps/v1
+ kind: Deployment
+ metadata:
+   name: hud-nem-erl-webapi
+ spec:
+   replicas: 1
+   selector:
+       matchLabels:
+         pod: hud-nem-erl-webapi-label
+   template:
+       metadata:
+         labels:
+           pod: hud-nem-erl-webapi-label
+       spec:
+         containers:
+         - name: hud-nem-erl-webapi-container
+           image: xhudanova/hud-nem-erl-webapi:1.0.0-63
+           imagePullPolicy: Always
+           ports:
+           - name: webapi-port
+             containerPort: 8080 
+           resources:
+             requests:
+               memory: "32Mi"
+               cpu: "0.1"
+             limits:
+               memory: "128Mi"
+               cpu: "0.3"
