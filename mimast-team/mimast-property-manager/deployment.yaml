@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mimast-property-manager-container # meno kontaineru - v pod-e ich môže byť viac
-        image: marek468/mimast
+        image: marek468/mimast:1.0.0-38
         imagePullPolicy: Always
         ports:
         - name: http
