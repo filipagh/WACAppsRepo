@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mf-e-recipes-fe-container
-          image: mfranczel/e-recipes-fe:1.0.0-36
+          image: mfranczel/e-recipes-fe:1.0.0-45
           imagePullPolicy: Always
           ports:
             - name: http
