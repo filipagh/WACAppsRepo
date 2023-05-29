@@ -7,11 +7,9 @@ spec:
   navigation:
     - element: fa-projekt
       path: fa-projekt
-      title: fa-projekt
-      details: nic zaujimave, zatial len nech daco je, este doplnim :)
+      title: fa-projekt vymenne listky
+      details: Agenda vymennych listkov
       attributes:
-#        - name: api-uri
-#          value: /fa-ambulance-wl/
         - name: base-path
           value: /ui/fa-projekt/
         - name: api-uri
