@@ -26,3 +26,19 @@
              limits:
                memory: "128Mi"
                cpu: "0.3"
+           env:
+           - name: MONGODB_URI
+             valueFrom:
+               configMapKeyRef:
+                 name: mongodb-configmap
+                 key: mongodb_uri
+           - name: MONGODB_USERNAME
+             valueFrom:
+               secretKeyRef:
+                 name: mongodb-secret
+                 key: mongo-root-username
+           - name: MONGODB_PASSWORD
+             valueFrom:
+               secretKeyRef:
+                 name: mongodb-secret
+                 key: mongo-root-password
